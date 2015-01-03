@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Arduino code tutorial </title>
+		<link type="text/css" rel="stylesheet" href="Programming_concepts.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="navigation_bar"> 
+			<div id="small_logo">
+				<p id="small_logo_title"> Jeff </p>
+			</div>
+			<p class="navigation_titles"> Control centre </p>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/blank_lesson_plan.html"> <p class="navigation_titles"> Lesson plans </p> </a>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/tutorial_home.html"> <p class="navigation_titles"> Tutorials </p> </a>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/jeff_home.html"> <p class="navigation_titles"> Home </p> </a>			
+		</div>
+
+
+		<!-- This script changes the colour of the navigation bar title when the mouse
+		is hovered over them -->
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+
+			$(".navigation_titles").mouseenter(function()
+			{
+				$(".navigation_titles").css({"color":"#E0E066"});
+			});
+
+			$(".navigation_titles").mouseleave(function()
+			{
+				$(".navigation_titles").css({"color":"#FFFFFF"});
+			});
+			
+		});
+
+		</script>
+
+		<h2>
+			Programming concepts
+		</h2>
+
+		<div id="drop_down_box">
+			<div id="Title" class="list"> <p class="drop_down_text"> Conditional Statements </p> </div>
+				<div id="panel">
+					<div id="code" class="list"> <p class="code_text"> if( A == B) { Do something } else { Do something else } </p> </div>
+					<div id="analysis" class="list"> <p class="drop_down_text"> Conditional statements are used when a programmer wants to check a condition before deciding what the program does next. A light controlled by a computer would use a conditional statement. If the lightswitch is clicked on, then the light should turn on. If the lightswitch is off, the light should turn off. In the above example, the program asks if A is the same as B. If it is, it executes the code inside the first set of curly brackets. If A is not equal to B, it executes the code inside the second set of brackets. </p> </div>
+				</div>
+		</div>
+
+		<!-- This script affects the dropdown boxes. It is responsible for highlighting the box when the mouse hovers over the title and for toggling the dropdown when the title is clicked. The next two scripts are identical, only they are applied to the other dropdown boxes -->
+		<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+
+			$("#panel").hide();
+
+			$("#Title").mouseenter(function()
+			{
+				$(this).css({"background-color":"#E0E066"});
+			});
+
+			$("#Title").mouseleave(function()
+			{
+				$(this).css({"background-color":"#007AA3"});
+			});
+
+			$("#Title").click(function()
+			{
+				$("#panel").toggle(250);
+			});
+
+		});
+		</script>
+
+		<div id="drop_down_box_2">
+			<div id="Title_2" class="list"> <p class="drop_down_text"> Variables </p> </div>
+				<div id="panel_2">
+					<div id="code_2" class="list"> <p class="code_text"> int A = 1; </p> </div>
+					<div id="analysis_2" class="list"> <p class="drop_down_text"> Variables are place holders that store one piece of 
+						data each. They are given a name by the programmer so that each variable can be referred to easily. In the above example, A is the name the programmer gave to this variable and the number value of 1 has been stored inside it. When the program now finds the capital letter A, it will read the value 1. </p> </div>
+				</div>
+		</div>
+
+		<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+
+			$("#panel_2").hide();
+
+			$("#Title_2").mouseenter(function()
+			{
+				$(this).css({"background-color":"#E0E066"});
+			});
+
+			$("#Title_2").mouseleave(function()
+			{
+				$(this).css({"background-color":"#007AA3"});
+			});
+
+			$("#Title_2").click(function()
+			{
+				$("#panel_2").toggle(250);
+			});
+
+		});
+		</script>
+
+		<div id="drop_down_box_3">
+			<div id="Title_3" class="list"> <p class="drop_down_text"> Loops/Iterative Constructs </p> </div>
+				<div id="panel_3">
+					<div id="code_3" class="list"> <p class="code_text"> while( i == 0 ) { block of code } </p> </div>
+					<div id="analysis_3" class="list"> <p class="drop_down_text"> Loops (also known as iterative constructs) repeat a block of code for a pre-specified number of times or unitl a condition has been fulfilled. The above example executes the block of code inside the curly brackets while 'i' has the value '0' stored inside it. When that value changes, the program stops repeating that block of code. </p> </div>
+				</div>
+		</div>
+
+		<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+
+			$("#panel_3").hide();
+
+			$("#Title_3").mouseenter(function()
+			{
+				$(this).css({"background-color":"#E0E066"});
+			});
+
+			$("#Title_3").mouseleave(function()
+			{
+				$(this).css({"background-color":"#007AA3"});
+			});
+
+			$("#Title_3").click(function()
+			{
+				$("#panel_3").toggle(250);
+			});
+
+		});
+		</script>
+
+	</body>
+	
+</html>

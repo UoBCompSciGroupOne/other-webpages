@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Hardware Diagrams</title>
+		<link type="text/css" rel="stylesheet" href="diagrams.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="navigation_bar"> 
+			<div id="small_logo">
+				<p id="small_logo_title"> Jeff </p>
+			</div>
+			<p class="navigation_titles"> Control centre </p>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/blank_lesson_plan.html"> <p class="navigation_titles"> Lesson plans </p> </a>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/tutorial_home.html"> <p class="navigation_titles"> Tutorials </p> </a>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/jeff_home.html"> <p class="navigation_titles"> Home </p> </a> 
+
+		</div>
+
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".navigation_titles").mouseenter(function()
+			{
+				$(".navigation_titles").addClass("changeColor");
+			});
+			$(".navigation_titles").mouseleave(function()
+			{
+				$(".navigation_titles").removeClass("changeColor");
+			});
+		});
+
+		</script>
+
+		<h2>
+			Specifications
+		</h2>
+
+		<div class="diagrams" id="main_wheels"> <p class="diagram_titles"> Main wheels </p> </div>
+		<div class="diagrams" id="trolley_wheels"> <p class="diagram_titles"> Trolley wheels </p> </div>
+		<div class="diagrams" id="base"> <p class="diagram_titles"> Diagram wheels </p> </div>
+		<div class="diagrams" id="motor_housing"> <p class="diagram_titles"> Motor housing </p> </div>
+
+	</body>
+
+</html>

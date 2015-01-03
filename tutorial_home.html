@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Tutorials </title>
+		<link type="text/css" rel="stylesheet" href="tutorial_home.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<div id="navigation_bar"> 
+			<div id="small_logo">
+				<p id="small_logo_title"> Jeff </p>
+			</div>
+			<p class="navigation_titles"> Control centre </p>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/blank_lesson_plan.html"> <p id="lesson_plans" class="navigation_titles"> Lesson plans </p> </a>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/tutorial_home.html"> <p id="tutorials" class="navigation_titles"> Tutorials </p> </a>
+			<a href="file:///Users/matthewbastow/Documents/HTML%20docs/jeff_home.html"> <p id="home" class="navigation_titles"> Home </p> </a>	
+		</div>
+
+
+		<!-- This script changes the colour of the navigation bar title when the mouse
+		is hovered over them -->
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+
+			$("#home").mouseenter(function()
+			{
+				$("#home").css({"color":"#E0E066"});
+			});
+			$("#home").mouseleave(function()
+			{
+				$("#home").css({"color":"#FFFFFF"});
+			});
+
+			$("#tutorials").mouseenter(function()
+			{
+				$("#tutorials").css({"color":"#E0E066"});
+			});
+			$("#tutorials").mouseleave(function()
+			{
+				$("#tutorials").css({"color":"#FFFFFF"});
+			});
+
+			$("#lesson_plans").mouseenter(function()
+			{
+				$("#lesson_plans").css({"color":"#E0E066"});
+			});
+			$("#lesson_plans").mouseleave(function()
+			{
+				$("#lesson_plans").css({"color":"#FFFFFF"});
+			});
+			
+		});
+
+		</script>
+
+		<h2>
+			Tutorials
+		</h2>
+
+		<a href="file:///Users/matthewbastow/Documents/HTML%20docs/diagrams.html"> <div class="link_box"> <p class="link_text"> Hardware </p> <p class="link_text"> Specifications </p> </div> </a>
+
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".link_box").mouseenter(function()
+			{
+				$(this).css({"background-color":"#E0E066"});
+			});
+
+			$(".link_box").mouseleave(function()
+			{
+				$(this).css({"background-color":"#007AA3"});
+			});
+		});
+
+		</script>
+
+		<div class="link_box_2"> <p class="link_text"> Breadboard </p> <p class="link_text"> Layout </p> </div>
+
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".link_box_2").mouseenter(function()
+			{
+				$(this).css({"background-color":"#E0E066"});
+			});
+
+			$(".link_box_2").mouseleave(function()
+			{
+				$(this).css({"background-color":"#007AA3"});
+			});
+		});
+
+		</script>
+
+		<a href="file:///Users/matthewbastow/Documents/HTML%20docs/Programming_concepts.html"> <div class="link_box_3"> <p class="link_text"> Programming </p> <p class="link_text"> Concepts </p> </div> </a>
+
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".link_box_3").mouseenter(function()
+			{
+				$(this).css({"background-color":"#E0E066"});
+			});
+
+			$(".link_box_3").mouseleave(function()
+			{
+				$(this).css({"background-color":"#007AA3"});
+			});
+		});
+
+		</script>
+
+	</body>
+
+</html>

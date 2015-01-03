@@ -1,0 +1,79 @@
+body
+{
+	height: 1000px;
+	width: 750px;
+}
+
+#navigation_bar 
+{
+	height: 150px;
+	width: 1000px;
+	background-color: #007AA3;
+
+	position: fixed;
+	margin: -20px;
+}
+
+#small_logo
+{
+	height: 125px;
+	width: 125px;
+	background-color: #007AA3;
+	border: 5px solid #FFFFFF;
+	border-radius: 100px;
+
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#small_logo_title
+{
+	font-size: 50px;
+	font-family: impact;
+	color: #FFFFFF;
+
+	padding-left: 25px;
+	margin-top: -5px;
+	padding-top: 35px;
+}
+
+.navigation_titles
+{
+	font-size: 20px;
+	color: #FFFFFF;
+
+	float: right;
+	margin: 70px 10px 10px 10px;
+}
+
+#logo
+{
+	height: 500px;
+	width: 500px;
+	background-color:  #FFFFFF;
+	border:15px solid #007AA3;
+	border-radius: 300px;
+
+	position: fixed;
+	margin: 275px;
+}
+
+#logo_title
+{
+	font-size: 200px;
+	font-family: impact;
+	color: #007AA3;
+
+	position: fixed;
+	margin: auto;
+	padding: 110px; 
+}
+
+#motto 
+{
+	font-size: 50px;
+
+	position: fixed;
+	padding-top: 500px
+}
